@@ -1,0 +1,7 @@
+baseURL = "https://Kaizenmentality.github.io/"
+languageCode = "en-us"
+title = "Kaizen Mentality"
+#theme = "ananke"
+
+[params]
+  customCSS = ["css/custom.css"]

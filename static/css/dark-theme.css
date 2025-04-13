@@ -1,0 +1,239 @@
+/* Dark Theme - Cyberpunk */
+
+body {
+  background-color: #121212 !important;
+  color: #f0f0f0 !important;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #f0f0f0 !important;
+}
+
+a {
+  color: #64ffda !important; /* Neon Green */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a7ffeb !important;
+  text-shadow: 0 0 5px #64ffda;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+
+button {
+  background-color: #64ffda;
+  color: #121212;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px #64ffda;
+}
+
+button:hover {
+  background-color: #a7ffeb;
+  box-shadow: 0 0 15px #a7ffeb;
+}
+
+/* Clickable Elements Glow Hover */
+a, .clickable {
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+a:hover, .clickable:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 12px 2px rgba(100, 255, 218, 0.4);
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 6px 2px rgba(100, 255, 218, 0.2); }
+  50% { box-shadow: 0 0 18px 4px rgba(100, 255, 218, 0.5); }
+  100% { box-shadow: 0 0 6px 2px rgba(100, 255, 218, 0.2); }
+}
+
+/* Cyberpunk Border */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  box-shadow: inset 0 0 50px 4px rgba(100, 255, 218, 0.5);
+  z-index: 9999;
+  border-radius: 2px;
+}
+
+/* === Layout Fix === */
+.home-wrapper {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* === Hero === */
+.hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  color: #64ffda;
+  text-shadow: 0 0 10px #64ffda;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.hero-img img {
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 100%;
+  background-color: transparent;
+  mix-blend-mode: screen;
+  box-shadow: 0 0 30px rgba(100, 255, 218, 0.6);
+}
+
+/* === Blog Grid === */
+.blog-preview h2 {
+  font-size: 2rem;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.post-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.post-card {
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: #222;
+  box-shadow: 0 0 15px rgba(100, 255, 218, 0.2);
+}
+
+.post-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(100, 255, 218, 0.3);
+}
+
+.post-card h3 a {
+  color: #64ffda;
+  text-decoration: none;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #64ffda;
+}
+
+/* === Glow Border Override === */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  border: 2px solid #64ffda;
+  z-index: 9999;
+  box-shadow: none;
+}
+
+/* === Header Branding (Site Title) === */
+header.site-header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .site-title a {
+  color: #64ffda;
+  text-decoration: none;
+  text-shadow: 0 0 10px #64ffda;
+}
+
+header .social-links a {
+  color: #64ffda;
+  font-size: 1.2rem;
+}
+
+/* === Site Header === */
+header.site-header {
+  background-color: #121212;
+  color: #f0f0f0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+header .menu a {
+  color: #64ffda;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* === YouTube Embed === */
+.youtube-embed {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.youtube-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+/* === Share Buttons === */
+.share-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.share-buttons a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #64ffda;
+  color: #121212;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px #64ffda;
+}
+
+/* === Site Footer === */
+footer.site-footer {
+  background-color: #121212;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+}

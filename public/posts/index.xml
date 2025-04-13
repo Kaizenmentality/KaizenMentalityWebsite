@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Kaizen Mentality</title>
+    <link>http://localhost:54192/posts/</link>
+    <description>Recent content in Posts on Kaizen Mentality</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Apr 2025 12:43:55 +0800</lastBuildDate>
+    <atom:link href="http://localhost:54192/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Post</title>
+      <link>http://localhost:54192/posts/first-post/</link>
+      <pubDate>Sat, 12 Apr 2025 12:43:55 +0800</pubDate>
+      <guid>http://localhost:54192/posts/first-post/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;youtube-embed&#34;&gt;&#xD;&#xA;  &lt;iframe&#xD;&#xA;    width=&#34;560&#34;&#xD;&#xA;    height=&#34;315&#34;&#xD;&#xA;    src=&#34;https://www.youtube.com/embed/dQw4w9WgXcQ&#34;&#xD;&#xA;    frameborder=&#34;0&#34;&#xD;&#xA;    allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34;&#xD;&#xA;    allowfullscreen&#xD;&#xA;  &gt;&lt;/iframe&gt;&#xD;&#xA;&lt;/div&gt;&#xA;+++&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

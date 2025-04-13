@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <!-- Hero Section -->
+  <section class="hero-wrapper">
+    <div class="hero-text">
+      <h2 class="tagline">Your hub for science-backed habits,<br>fitness protocols, and mindset mastery.</h2>
+    </div>
+    <div class="hero-img">
+      <img src="/kaizen-hero.png" alt="Kaizen Hero Image">
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="blog-preview">
+    <h2>Latest Posts</h2>
+    <div class="post-grid">
+      {{ range first 24 .Pages }}
+        <div class="post-card clickable">
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p>{{ .Summary }}</p>
+          <a href="{{ .RelPermalink }}" class="read-more">Read More →</a>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ partial "email-form.html" . }}
+{{ end }}
