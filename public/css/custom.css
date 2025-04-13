@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Base */
 body {
   background-color: #ffffff !important;
@@ -369,3 +370,17 @@ footer.site-footer {
   cursor: pointer;
   border-radius: 5px;
 }
+=======
+body {
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  line-height: 1.6;
+  background-color: #fafafa;
+  color: #333;
+}
+h1, h2 {
+  color: #005f73;
+}
+>>>>>>> e3b0484f77b5934740fb7c628a6f4cdac26a174f

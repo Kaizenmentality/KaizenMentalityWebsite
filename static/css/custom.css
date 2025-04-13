@@ -3,6 +3,10 @@ body {
   background-color: #ffffff !important;
   color: #000000 !important;
   line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
 }
 
 /* Headings */
@@ -169,6 +173,7 @@ header.site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #333;
 }
 
 header .site-title a {
@@ -368,4 +373,17 @@ footer.site-footer {
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  line-height: 1.6;
+  background-color: #fafafa;
+  color: #333;
+}
+h1, h2 {
+  color: #005f73;
 }

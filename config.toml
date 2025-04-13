@@ -1,0 +1,5 @@
+
+baseURL = "https://kaizenmentality.github.io/kaizen-mentality/"
+languageCode = "en-us"
+title = "Kaizen Mentality"
+publishDir = "public"
